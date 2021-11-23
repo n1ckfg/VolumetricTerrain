@@ -42,7 +42,7 @@ const key = {
 	flyMode: 70
 };
 
-
+let container;
 
 
 
@@ -70,8 +70,9 @@ function setup() {
 	//THREE Renderer
 	renderer.setClearColor( new THREE.Color( 'rgb(44, 168, 221)' ), 1.0 );
 	renderer.setSize( windowWidth, windowHeight );
-	document.getElementById( 'threeDiv' ).appendChild( renderer.domElement );
-
+	container = document.getElementById( 'threeDiv' );
+	container.appendChild( renderer.domElement );
+	document.body.appendChild(VRButton.createButton(renderer));
 
 	//prepare pointerLock api
 	if ( 'pointerLockElement' in document || 'mozPointerLockElement' in document || 'webkitPointerLockElement' in document ) {

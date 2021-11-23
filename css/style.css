@@ -1,6 +1,6 @@
 @font-face {
     font-family: Vitreous-Outline;
-    src: url('./resources/Vitreous-Outline.ttf'); 
+    src: url('../resources/Vitreous-Outline.ttf'); 
   }
   *{
     font-family: 'Vitreous-Outline';
